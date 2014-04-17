@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptchaIon", "CaptchaIon\CaptchaIon.csproj", "{68CB7E33-628A-4040-BC43-3120E2E2FFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCaptchaMVC", "MvcApplication1\TestCaptchaMVC.csproj", "{A566D2AD-055F-45E7-96E7-233745283AE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68CB7E33-628A-4040-BC43-3120E2E2FFFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CB7E33-628A-4040-BC43-3120E2E2FFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CB7E33-628A-4040-BC43-3120E2E2FFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CB7E33-628A-4040-BC43-3120E2E2FFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A566D2AD-055F-45E7-96E7-233745283AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A566D2AD-055F-45E7-96E7-233745283AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A566D2AD-055F-45E7-96E7-233745283AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A566D2AD-055F-45E7-96E7-233745283AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿.container-captcha {
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    
+}
+.container-captcha .image {
+     text-align: center;
+      margin: 5px;
+}
+
+.container-captcha .error {
+    text-align: center;
+    color: #FF3300;
+    margin: 3px;
+}
+.container-captcha .textbox {
+    /*float: left;*/
+    text-align: center;
+    padding: 5px;
+}
+.container-captcha .textbox input {
+    width: 150px;
+}
+    

@@ -1,0 +1,53 @@
+﻿<script type="text/javascript">
+    $(function () {
+        $("form").submit(function () {
+            if ($('#textcaptcha').val().length != $('#textlength').val()) {
+                $('.error').html('#errortext#');
+                return false;
+            }
+            return true;
+        });
+    });
+    function doAJAX() {
+        $.ajax({
+            type: "POST",
+            url: "cp/captcha/rfimage/#ass#",
+            data: JSON.stringify({ 'image': $('#head-img').attr('src') }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                $('#guidcaptcha').val(response.guid);
+                $('#head-img').attr("src", response.url);
+                $('.error').html('');
+                $('#textcaptcha').val('');
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.responseText);
+            }
+        });
+    }
+</script>
+<div class="container-captcha">
+    <div class="error">
+        #error# 
+    </div>
+    <div class="image">
+        <img alt="captcha" id="head-img" src="#url#" />
+    </div>
+    <div class="textbox">
+        <div style="float: left;">
+            <div style="float: left;">
+                <input id="textcaptcha" type="text" name="Captchavalue" />
+            </div>
+            <div style="float: left; width: 20px;">
+                <img alt="rf" src="#altimg#" onclick="doAJAX();" style="width: 20px;" />
+
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <input id="submitcaptcha" type="submit" name="submitcaptcha" value="#text#" />
+        <input id="guidcaptcha" type="hidden" value="#key#" name="Captchakey" />
+        <input id="textlength" type="hidden" value="#length#" />
+    </div>
+</div>
